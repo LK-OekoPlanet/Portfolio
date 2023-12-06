@@ -16,6 +16,7 @@ body {
     line-height: 1.6;
 }
 
+/* h1 */
 h1 {
     font-family: 'OrangeJuice', Arial, sans-serif;
     font-size: 3rem;
@@ -25,10 +26,22 @@ h1 {
 
 /* Header */
 header {
-    background: #333;
+    background: #07102D;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Logo */
+.navigation .logo {
+    width: 7%;
+    float: left;
+    margin-left: 20px;
+    padding: 0;
+    margin-top: -10px;
+}
+a.logo img {
+    width: 100%;
 }
 
 /* Navigation */
