@@ -5,6 +5,17 @@
     font-style: normal;
 }
 
+/* Farbeinstellungen */
+:root {
+    --primarycolor: #212c4d;
+    --secondarycolor: #ff4500;
+    --linkcolor: #fff;
+    --backgroundcolor: ;
+    --headercolor: #07102D;
+    --alertcolor: #ff4500;
+    --footercolor: #333;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +35,17 @@ h1 {
     background-color: white;
 }
 
+h2, h3, h4, h5, h6 {
+    color: var(--primarycolor);
+}
+
+a {
+    color: var(--linkcolor);
+}
+
 /* Header */
 header {
-    background: #07102D;
+    background: var(--headercolor);
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -48,7 +67,7 @@ a.logo img {
 
 /* Navigation */
 .navigation a {
-    color: #fff;
+    color: var(--linkcolor);
     text-decoration: none;
     padding: 5px 10px;
     display: inline-block;
@@ -93,7 +112,7 @@ main {
 
 /* Footer */
 footer {
-    background: #333;
+    background: var(--footercolor);
     color: #fff;
     text-align: center;
     padding: 10px 0;
