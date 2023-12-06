@@ -10,11 +10,11 @@
     --primarycolor: #212c4d;
     --secondarycolor: #ff4500;
     --linkcolor: #fff;
-    --backgroundcolor: ;
+    --backgroundcolor: #FFF8E1;
     --headercolor: #07102D;
     --alertcolor: #ff4500;
     --footercolor: #333;
-  }
+}
 
 * {
     margin: 0;
@@ -25,6 +25,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: var(--backgroundcolor);
 }
 
 /* h1 */
@@ -49,6 +50,13 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 /* Logo */
@@ -77,9 +85,15 @@ a.logo img {
     background: #555;
 }
 
+.kontakt {
+    float: right;
+    margin-right: 20px;
+}
+
 /* Main Content */
 main {
     padding: 20px;
+    margin-top: 60px;
 }
 
 .part-1, .part-2, .part-3 {
@@ -87,6 +101,7 @@ main {
     margin-bottom: 20px;
     padding: 20px;
     color: #fff;
+    min-height: 200px;
 }
 
 /* Two sides in part-1 */
@@ -116,4 +131,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    min-height: 250px;
 }
