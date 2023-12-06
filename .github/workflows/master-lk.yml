@@ -13,7 +13,6 @@ jobs:
           username: ${{ secrets.fpt_username }}
           server: ${{ secrets.ftp_server }}
           port: ${{ secrets.ftp_port }}
-          local_path: './static/*'
-          remote_path: '/var/www/app'
+          remote_path: '/Portfolio'
           sftp_only: true
           password: ${{ secrets.ftp_password }}
