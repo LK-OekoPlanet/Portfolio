@@ -2,8 +2,7 @@ on:
     push:
       branches:
         - master
-      paths:
-        - '*'
+
 name: 🚀 Deploy website on push
 jobs:
     web-deploy:
