@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'OrangeJuice';
+    src: url('fonts/OrangeJuice.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'OrangeJuice', Arial, sans-serif;
+    font-size: 3rem;
+    color: black;
+    background-color: white;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Navigation */
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    background: #555;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.part-1, .part-2, .part-3 {
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Two sides in part-1 */
+.left-side {
+    background-color: blue;
+    width: 65%;
+    float: left;
+    padding: 10px 0;
+}
+.right-side {
+    background-color: yellow;
+    width: 35%;
+    float: left;
+    padding: 10px 0;
+}
+
+/* Clearfix */
+.part-1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
