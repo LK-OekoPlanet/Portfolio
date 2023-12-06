@@ -18,7 +18,7 @@ jobs:
         server: ssh.strato.de
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        protocol: ftps
+        protocol: sftp
         server-dir: /Portfolio/
         exclude: |
           **/.git*
