@@ -102,6 +102,7 @@ main {
     padding: 20px;
     color: #fff;
     min-height: 200px;
+    scroll-margin-top: 60px;
 }
 
 /* Two sides in part-1 */
