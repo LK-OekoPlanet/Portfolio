@@ -1,0 +1,27 @@
+on:
+    push:
+      branches:
+        - master
+      paths:
+        - '*'
+name: 🚀 Deploy website on push
+jobs:
+    web-deploy:
+      name: 🎉 Deploy
+      runs-on: ubuntu-latest
+      steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+      
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ssh.strato.de
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /Portfolio
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+  
