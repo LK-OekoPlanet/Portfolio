@@ -119,6 +119,15 @@ main {
     padding: 10px 0;
 }
 
+img.lk-normal {
+    height: 100%;
+    width: 100%;
+}
+
+img.lk-comic {
+    height: 100%;
+    width: 100%;
+}
 /* Clearfix */
 .part-1::after {
     content: "";
