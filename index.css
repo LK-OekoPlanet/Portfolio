@@ -9,8 +9,10 @@
 :root {
     --primarycolor: #212c4d;
     --secondarycolor: #ff4500;
-    --linkcolor: #fff;
-    --backgroundcolor: #FFF8E1;
+    --linkcolor: #fafafa;
+    --backgroundcolor0: #FFF8E1;
+    --backgroundcolor1: #1d1d1f;
+    --backgroundcolor2:#fafafa;
     --headercolor: #07102D;
     --alertcolor: #ff4500;
     --footercolor: #333;
@@ -20,28 +22,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: var(--backgroundcolor);
+    background-color: var(--backgroundcolor1);
 }
 
 /* h1 */
 h1 {
-    font-family: 'OrangeJuice', Arial, sans-serif;
-    font-size: 3rem;
-    color: black;
-    background-color: white;
+    font-size: 1.5rem;
+    color: var(--primarycolor);
+    text-align: center;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3 {
+    font-size: 3rem;
     color: var(--primarycolor);
+    text-align: center;
+}
+
+h4, h5, h6 {
+    color: var(--primarycolor)
 }
 
 a {
     color: var(--linkcolor);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 /* Header */
@@ -91,8 +101,8 @@ a.logo img {
 
 /* Main Content */
 main {
-    padding: 20px;
-    margin-top: 60px;
+    margin: 60px 0 1000px 0;
+    background-color: var(--backgroundcolor);
 }
 
 .scrolling-element {
@@ -100,24 +110,34 @@ main {
 }
 
 .part-1, .part-2, .part-3 {
-    background-color: black;
     margin-bottom: 20px;
     padding: 20px;
     color: #fff;
-    min-height: 200px;
+    min-height: 500px;
     scroll-margin-top: 60px;
+}
+
+.part-1 {
+    margin-top: -10px;
+    background-color: var(--backgroundcolor0);
+}
+
+.part-2 {
+    background-color: var(--backgroundcolor1);
+}
+
+.part-3 {
+    background-color: var(--backgroundcolor2);
 }
 
 /* Two sides in part-1 */
 .left-side {
-    background-color: blue;
     width: 65%;
     float: left;
     padding: 10px 0;
 }
 
 .right-side {
-    background-color: yellow;
     width: 35%;
     float: left;
     padding: 10px 0;
