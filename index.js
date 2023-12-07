@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
 });
 
 var elementToScroll = document.querySelector('.scrolling-element');
-var stopPosition = 150;
+var stopPosition = 250;
 
 window.addEventListener('scroll', function() {
     var scrolled = window.scrollY;
