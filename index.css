@@ -95,6 +95,10 @@ main {
     margin-top: 60px;
 }
 
+.scrolling-element {
+    position: relative;
+}
+
 .part-1, .part-2, .part-3 {
     background-color: black;
     margin-bottom: 20px;
