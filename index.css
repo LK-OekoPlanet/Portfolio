@@ -139,7 +139,7 @@ main {
 }
 
 .lk-comic {
-    clip: rect(auto, auto, 100%, auto);
+    clip: rect(0, auto, 0, auto);
 }
 
 /* Clearfix */
