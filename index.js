@@ -1,10 +1,8 @@
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    var comicImage = document.querySelector('.lk-comic');
+    var containerHeight = document.querySelector('.img-container').offsetHeight;
+    var percentage = scrollPosition / window.innerHeight;
+    var visibleHeight = Math.min(containerHeight, percentage * 2 * containerHeight);
 
-    if (scrollPosition > 100) {
-        comicImage.classList.add('show-comic');
-    } else {
-        comicImage.classList.remove('show-comic');
-    }
+    document.querySelector('.lk-comic').style.clip = `rect(auto, auto, ${visibleHeight}px, auto)`;
 });

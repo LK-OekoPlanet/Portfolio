@@ -111,11 +111,15 @@ main {
     float: left;
     padding: 10px 0;
 }
+
 .right-side {
     background-color: yellow;
     width: 35%;
     float: left;
     padding: 10px 0;
+}
+
+.img-container {
     position: relative;
     height: 30vw;
 }
@@ -124,22 +128,18 @@ main {
     height: fit-content;
     width: 100%;
     position: absolute;
-    transition: opacity 1.5s ease;
 }
 
 .lk-comic {
     height: fit-content;
     width: 100%;
     position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease;
     -webkit-filter: invert(1);
     filter: invert(1);
-    
 }
 
-.show-comic {
-    opacity: 1;
+.lk-comic {
+    clip: rect(auto, auto, 100%, auto);
 }
 
 /* Clearfix */
