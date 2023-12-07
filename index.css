@@ -137,8 +137,9 @@ main {
 }
 
 .lk-comic {
-    clip: rect(0, auto, 0, auto);
+    clip-path: inset(100% 0 0 0);
 }
+
 
 /* Clearfix */
 .part-1::after {
