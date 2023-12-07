@@ -49,7 +49,6 @@ header {
     background: var(--headercolor);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
 }
 
 header.sticky {
@@ -61,12 +60,11 @@ header.sticky {
 
 /* Logo */
 .navigation .logo {
-    width: 50px;
-    height: 50px;
+    width: clamp(45px, 7vw, 60px);
+    height: clamp(45px, 7vw, 60px);
     float: left;
     margin-left: 20px;
     padding: 0;
-    margin-top: -10px;
 }
 a.logo img {
     width: 100%;
@@ -77,8 +75,9 @@ a.logo img {
 .navigation a {
     color: var(--linkcolor);
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     display: inline-block;
+    font-size: clamp(1rem,2.5vw,1.5rem);
 }
 
 .navigation a:hover {
@@ -118,6 +117,7 @@ main {
     float: left;
     padding: 10px 0;
     position: relative;
+    height: 30vw;
 }
 
 .lk-normal {
