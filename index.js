@@ -12,12 +12,12 @@ function avatarPositionScroll() {
         elementToScroll.style.transform = 'translateY(' + scrolled + 'px)';
     }
 
-    var clipValue = (stopPosition - scrolled * 1.1) / stopPosition * 100;
-    var clipValue1 = 100 - (stopPosition - scrolled * 1.1) / stopPosition * 100;
-
-    if (clipValue1 <= 100 && clipValue >= 0){
-    lkcomic.style.clipPath = `inset(${clipValue}% 0 0 0)`;
-    lknormal.style.clipPath = `inset( 0 0 ${clipValue1}% 0)`;
+    var clipValue = ((stopPosition - scrolled * 1.3) / stopPosition * 100) + 8;
+    var clipValue1 = 92 - ((stopPosition - scrolled * 1.3) / stopPosition * 100);
+    console.log(clipValue1)
+    if (20 < clipValue1 <= 100 && 80 > clipValue >= 0){
+        lkcomic.style.clipPath = `inset(${clipValue}% 0 0 0)`;
+        lknormal.style.clipPath = `inset( 0 0 ${clipValue1}% 0)`;
     }
 }
 
