@@ -34,12 +34,12 @@ body {
 
 /* h1 */
 h1 {
-    font-size: 1.5rem;
+    font-size: clamp(0.7rem,5vw,1.5rem);
     text-align: center;
 }
 
 h2, h3 {
-    font-size: 3rem;
+    font-size: clamp(1rem,5vw,3.5rem);
     text-align: center;
 }
 
@@ -157,8 +157,8 @@ main {
 .lk-comic {
     width: 100%;
     position: absolute;
-    -webkit-filter: invert(1);
-    filter: invert(1);
+    /*-webkit-filter: invert(1);
+    filter: invert(1);*/
 }
 
 .lk-comic {
