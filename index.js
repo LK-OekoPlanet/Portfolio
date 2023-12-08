@@ -14,7 +14,6 @@ function avatarPositionScroll() {
 
     var clipValue = (stopPosition - scrolled * 1.1) / stopPosition * 100;
     var clipValue1 = 101 - (stopPosition - scrolled * 1.1) / stopPosition * 100;
-    console.log(clipValue , clipValue1)
 
     if (clipValue1 < 101 && clipValue >= 0){
     lkcomic.style.clipPath = `inset(${clipValue}% 0 0 0)`;
