@@ -2,9 +2,16 @@ var elementToScroll = document.querySelector('.scrolling-element');
 var lkcomic = document.querySelector('.lk-comic');
 var lknormal = document.querySelector('.lk-normal');
 var elementPart2 = document.querySelector('.part-2');
+var introElement = document.querySelector('.introWall');
 var Loesung;
 var width;
 var stopPosition;
+
+setTimeout(function() {
+    window.scrollTo(0, 0);
+}, 20);
+
+
 function initilizeVariables() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // Steigungsformel um die Responsiveness des richtigen Umbruchs zu bestimmen
@@ -36,6 +43,9 @@ function avatarPositionScroll() {
 
 document.addEventListener('DOMContentLoaded',initilizeVariables);
 document.addEventListener('DOMContentLoaded',avatarPositionScroll);
+introElement.addEventListener('animationend',initilizeVariables);
+introElement.addEventListener('animationend',avatarPositionScroll);
+introElement.addEventListener('animationend', stopAvatar);
 document.addEventListener('click',avatarPositionScroll);
 document.addEventListener('scroll', stopAvatar);
 document.addEventListener('scroll', avatarPositionScroll);
