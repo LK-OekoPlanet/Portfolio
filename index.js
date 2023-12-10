@@ -9,7 +9,7 @@ var stopPosition;
 
 setTimeout(function() {
     window.scrollTo(0, 0);
-}, 20);
+}, 100);
 
 
 function initilizeVariables() {
