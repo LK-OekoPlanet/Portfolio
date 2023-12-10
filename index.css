@@ -35,7 +35,7 @@ body {
     line-height: 1.6;
     background-color: var(--backgroundcolor1);
     overflow: hidden;
-    animation: noscrollforyou 4s linear forwards;
+    animation: noscrollforyou 3s linear forwards;
 }
 
 .introImage {
@@ -67,6 +67,9 @@ body {
 }
 
 @keyframes noscrollforyou {
+    99% {
+        overflow: hidden;
+    }
     100% {
         overflow: scroll;
     }
