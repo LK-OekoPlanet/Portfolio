@@ -73,7 +73,7 @@ body {
     0% {
         transform: translateX(0);
     }
-    20%{
+    25%{
         transform: translate(30vw);
     }
     /* Beginn der Shaking-Animation */
@@ -87,7 +87,7 @@ body {
         transform: translate(30vw) rotate(0deg);
     }
     /* Ende der Shaking-Animation */
-    80%{
+    75%{
         transform: translate(30vw);
     }
     100% {
