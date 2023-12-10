@@ -36,6 +36,7 @@ body {
     background-color: var(--backgroundcolor1);
     overflow: hidden;
     animation: noscrollforyou 4s linear forwards;
+    -webkit-animation: noscrollforyou 4s linear forwards;
 }
 
 .introImage {
@@ -46,6 +47,7 @@ body {
     z-index: 102;
     height: auto;
     animation: wander 3s ease-in-out forwards;
+    -webkit-animation: wander 3s ease-in-out forwards;
 }
 
 .introWall {
@@ -55,9 +57,20 @@ body {
     z-index: 101;
     position: relative;
     animation: backgroundbye 4s ease-in-out forwards;
+    -webkit-animation: backgroundbye 4s ease-in-out forwards;
 }
 
 @keyframes backgroundbye {
+    90%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@-webkit-keyframes backgroundbye {
     90%{
         opacity: 1;
     }
@@ -73,29 +86,68 @@ body {
     }
 }
 
+@-webkit-keyframes noscrollforyou {
+    100% {
+        overflow: scroll;
+    }
+}
+
 @keyframes wander {
     0% {
-        transform: translateX(0);
+        transform: translate(30vw);
+        -webkit-transform: translate(30vw);
     }
     25%{
         transform: translate(30vw);
+        -webkit-transform: translate(30vw);
     }
     /* Beginn der Shaking-Animation */
     35%, 45%{
         transform: translate(30vw) rotate(5deg);
+        -webkit-transform: translate(30vw) rotate(5deg);
     }
     40%, 50% {
         transform: translate(30vw) rotate(-5deg);
+        -webkit-transform: translate(30vw) rotate(-5deg);
     }
     55% {
         transform: translate(30vw) rotate(0deg);
+        -webkit-transform: translate(30vw) rotate(0deg);
     }
     /* Ende der Shaking-Animation */
     75%{
         transform: translate(30vw);
+        -webkit-transform: translate(30vw);
     }
     100% {
         transform: translateX(100vw);
+        -webkit-transform: translateX(100vw);
+    }
+}
+
+@-webkit-keyframes wander {
+    0% {
+        -webkit-transform: translate(30vw);
+    }
+    25%{
+        -webkit-transform: translate(30vw);
+    }
+    /* Beginn der Shaking-Animation */
+    35%, 45%{
+        -webkit-transform: translate(30vw) rotate(5deg);
+    }
+    40%, 50% {
+        -webkit-transform: translate(30vw) rotate(-5deg);
+    }
+    55% {
+        -webkit-transform: translate(30vw) rotate(0deg);
+    }
+    /* Ende der Shaking-Animation */
+    75%{
+        -webkit-transform: translate(30vw);
+    }
+    100% {
+        -webkit-transform: translateX(100vw);
     }
 }
 
