@@ -42,14 +42,14 @@ body {
     position: absolute;
     top: 10vh;
     left: 0;
-    width: 70vh;
+    width: 40vw;
     z-index: 102;
     height: auto;
     animation: wander 4s ease-in-out forwards;
 }
 
 .introWall {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: var(--headercolor);
     z-index: 101;
