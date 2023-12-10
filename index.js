@@ -11,6 +11,11 @@ setTimeout(function() {
     window.scrollTo(0, 0);
 }, 100);
 
+document.querySelector('.introWall').addEventListener('animationend', function() {
+    this.style.display = 'none';
+});
+
+
 
 function initilizeVariables() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
