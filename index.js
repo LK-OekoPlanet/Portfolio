@@ -7,9 +7,6 @@ var Loesung;
 var width;
 var stopPosition;
 
-setTimeout(function() {
-    window.scrollTo(0, 0);
-}, 100);
 
 document.querySelector('.introWall').addEventListener('animationend', function() {
     this.style.display = 'none';
@@ -48,9 +45,6 @@ function avatarPositionScroll() {
 
 document.addEventListener('DOMContentLoaded',initilizeVariables);
 document.addEventListener('DOMContentLoaded',avatarPositionScroll);
-introElement.addEventListener('animationend',initilizeVariables);
-introElement.addEventListener('animationend',avatarPositionScroll);
-introElement.addEventListener('animationend', stopAvatar);
 document.addEventListener('click',avatarPositionScroll);
 document.addEventListener('scroll', stopAvatar);
 document.addEventListener('scroll', avatarPositionScroll);
