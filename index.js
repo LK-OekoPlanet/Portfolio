@@ -1,11 +1,13 @@
 var elementToScroll = document.querySelector('.scrolling-element');
 var lkcomic = document.querySelector('.lk-comic');
 var lknormal = document.querySelector('.lk-normal');
+var elementPart1 = document.querySelector('.part-1');
 var elementPart2 = document.querySelector('.part-2');
 var introElement = document.querySelector('.introWall');
 var Loesung;
 var width;
 var stopPosition;
+var startPosition;
 
 
 document.querySelector('.introWall').addEventListener('animationend', function() {
@@ -19,12 +21,14 @@ function initilizeVariables() {
     // Steigungsformel um die Responsiveness des richtigen Umbruchs zu bestimmen
     Loesung = (0.347 * width) + 127.6;
     stopPosition = elementPart2.offsetTop;
+    startPosition = elementPart1.offsetTop - 50;
 }
 
 function stopAvatar(){
     let scrolled = window.scrollY || document.documentElement.scrollTop;
-    if (scrolled * 1.1 < stopPosition) {
-        elementToScroll.style.transform = 'translateY(' + scrolled + 'px)';
+    if (startPosition < scrolled && scrolled * 1.1 < stopPosition) {
+        let scrolledMinus = scrolled - startPosition;
+        elementToScroll.style.transform = 'translateY(' + scrolledMinus + 'px)';
     }
 }
 
