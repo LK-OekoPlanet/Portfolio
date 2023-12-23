@@ -293,3 +293,37 @@ footer {
     padding: 10px 0;
     min-height: 250px;
 }
+
+
+.scroll-container {
+    height: 100vh;
+  }
+.speak {
+    margin: 150vh 0;
+}
+
+.speak:first-child {
+        margin-top: -50vh;
+}
+
+.speak[data-scroll] {
+    transform: translatey(calc(var(--viewport-y) * 30vh));
+    opacity: calc(var(--visible-y));
+}
+
+.scroll-sequence__content {
+    padding: 4em;   
+}
+
+.scroll-sequence {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
