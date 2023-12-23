@@ -60,7 +60,7 @@ const appleSequenceImages = [];
 const treeSequenceImages = [];
 const myImageSequenceImages = [];
 
-for (let i = 1; i <= 83; i++) {
+for (let i = 0; i <= 100; i++) {
   myImageSequenceImages.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
 }
 
@@ -397,38 +397,17 @@ class ScrollSequence {
   }
 }
 
-const myImageSequence = new ScrollSequence({
+const myImageSequence1 = new ScrollSequence({
     container: '.my-image-sequence-container', 
     scrollWith: '.my-scroll-container',
     images: myImageSequenceImages,
     imagesRoot: 'https://lennardkiessling.com/assets/sequence1/',
-    priorityFrames: [0, 20, 40, 60, 80],
+    priorityFrames: [0, 20, 40, 60, 99],
     cover: true,
-    playUntil: 'scroll-out',
-    starts: 'in'
+    starts: 'in',
+    playUntil: 'scroll-out'
   });
 
-const appleSequence = new ScrollSequence({
-  container: '.apple-sequence',
-  scrollWith: '.apple-container',
-  images: appleSequenceImages,
-  imagesRoot: 'https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/02-head-bob-turn/',
-  priorityFrames: [0, 20, 40, 60, 90],
-  cover: true,
-  playUntil: 'scroll-out',
-  starts: 'in'
-});
-
-const treeSequence = new ScrollSequence({
-  container: '.tree-sequence',
-  scrollWith: '.tree-container',
-  images: treeSequenceImages,
-  imagesRoot: 'https://jacobbelanger.com/assets/sequence/',
-  priorityFrames: [0, 20, 40, 60, 90],
-  cover: true,
-  starts: 'out',
-  ends: 'in'
-});
 
 // END SCROLL_SEQUENCE CODE
 
