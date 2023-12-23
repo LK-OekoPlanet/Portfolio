@@ -61,15 +61,17 @@ const myImageSequenceImages1 = [];
 const myImageSequenceImages2 = [];
 const myImageSequenceImages3 = [];
 
-for (let i = 0; i <= 100; i++) {
-  myImageSequenceImages.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
+for (let i = 1; i <= 100; i++) {
+  myImageSequenceImages0.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
 }
-
-for (let i = 0; i <= 131; i ++) {
-  appleSequenceImages.push(`${`000${i}`.slice(-4)}.jpg`);
+for (let i = 1; i <= 100; i++) {
+  myImageSequenceImages1.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
 }
-for (let i = 0; i <= 98; i ++) {
-  treeSequenceImages.push(`${`000${i}`.slice(-3)}.jpg`);
+for (let i = 1; i <= 100; i++) {
+  myImageSequenceImages2.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
+}
+for (let i = 1; i <= 100; i++) {
+  myImageSequenceImages3.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
 }
 
 const requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
