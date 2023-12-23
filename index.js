@@ -401,8 +401,8 @@ class ScrollSequence {
 }
 
 const myImageSequence0 = new ScrollSequence({
-    container: '.my-image-sequence-container', 
-    scrollWith: '.my-scroll-container',
+    container: '.my-image-sequence-container0', 
+    scrollWith: '.my-scroll-container0',
     images: myImageSequenceImages,
     imagesRoot: 'https://lennardkiessling.com/assets/sequence1/',
     priorityFrames: [1, 20, 40, 60, 99],
@@ -412,8 +412,8 @@ const myImageSequence0 = new ScrollSequence({
   });
 
 const myImageSequence1 = new ScrollSequence({
-  container: '.my-image-sequence-container', 
-  scrollWith: '.my-scroll-container',
+  container: '.my-image-sequence-container1', 
+  scrollWith: '.my-scroll-container1',
   images: myImageSequenceImages,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence2/',
   priorityFrames: [1, 20, 40, 60, 99],
@@ -423,8 +423,8 @@ const myImageSequence1 = new ScrollSequence({
 });
 
 const myImageSequence2 = new ScrollSequence({
-  container: '.my-image-sequence-container', 
-  scrollWith: '.my-scroll-container',
+  container: '.my-image-sequence-container2', 
+  scrollWith: '.my-scroll-container2',
   images: myImageSequenceImages,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence3/',
   priorityFrames: [1, 20, 40, 60, 99],
@@ -434,8 +434,8 @@ const myImageSequence2 = new ScrollSequence({
 });
 
 const myImageSequence3 = new ScrollSequence({
-  container: '.my-image-sequence-container', 
-  scrollWith: '.my-scroll-container',
+  container: '.my-image-sequence-container3', 
+  scrollWith: '.my-scroll-container3',
   images: myImageSequenceImages,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence4/',
   priorityFrames: [1, 20, 40, 60, 99],
