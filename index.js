@@ -56,9 +56,10 @@ window.addEventListener('resize', initilizeVariables);
 window.addEventListener('resize', avatarPositionScroll);
 
 
-const appleSequenceImages = [];
-const treeSequenceImages = [];
-const myImageSequenceImages = [];
+const myImageSequenceImages0 = [];
+const myImageSequenceImages1 = [];
+const myImageSequenceImages2 = [];
+const myImageSequenceImages3 = [];
 
 for (let i = 0; i <= 100; i++) {
   myImageSequenceImages.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
@@ -397,16 +398,50 @@ class ScrollSequence {
   }
 }
 
-const myImageSequence1 = new ScrollSequence({
+const myImageSequence0 = new ScrollSequence({
     container: '.my-image-sequence-container', 
     scrollWith: '.my-scroll-container',
     images: myImageSequenceImages,
     imagesRoot: 'https://lennardkiessling.com/assets/sequence1/',
-    priorityFrames: [0, 20, 40, 60, 99],
+    priorityFrames: [1, 20, 40, 60, 99],
     cover: true,
     starts: 'in',
     playUntil: 'scroll-out'
   });
+
+const myImageSequence1 = new ScrollSequence({
+  container: '.my-image-sequence-container', 
+  scrollWith: '.my-scroll-container',
+  images: myImageSequenceImages,
+  imagesRoot: 'https://lennardkiessling.com/assets/sequence2/',
+  priorityFrames: [1, 20, 40, 60, 99],
+  cover: true,
+  starts: 'in',
+  playUntil: 'scroll-out'
+});
+
+const myImageSequence2 = new ScrollSequence({
+  container: '.my-image-sequence-container', 
+  scrollWith: '.my-scroll-container',
+  images: myImageSequenceImages,
+  imagesRoot: 'https://lennardkiessling.com/assets/sequence3/',
+  priorityFrames: [1, 20, 40, 60, 99],
+  cover: true,
+  starts: 'in',
+  playUntil: 'scroll-out'
+});
+
+const myImageSequence3 = new ScrollSequence({
+  container: '.my-image-sequence-container', 
+  scrollWith: '.my-scroll-container',
+  images: myImageSequenceImages,
+  imagesRoot: 'https://lennardkiessling.com/assets/sequence4/',
+  priorityFrames: [1, 20, 40, 60, 99],
+  cover: true,
+  starts: 'in',
+  playUntil: 'scroll-out'
+});
+
 
 
 // END SCROLL_SEQUENCE CODE
