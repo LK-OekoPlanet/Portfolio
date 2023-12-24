@@ -26,7 +26,8 @@ function initilizeVariables() {
 
 function stopAvatar(){
     let scrolled = window.scrollY || document.documentElement.scrollTop;
-    if (startPosition < scrolled && scrolled * 1.1 < stopPosition) {
+    console.log(scrolled < stopPosition)
+    if (startPosition < scrolled && scrolled < stopPosition) {
         let scrolledMinus = scrolled - startPosition;
         elementToScroll.style.transform = 'translateY(' + scrolledMinus + 'px)';
     }
@@ -312,6 +313,7 @@ class ScrollSequence {
       ends: 'out',
       imagesRoot: '',
       cover: false,
+      sequenceSpeed: null,
       ...opts
     }
     this.container = typeof opts.container === 'object' ? 
@@ -340,6 +342,9 @@ class ScrollSequence {
       images: this.images,
       cover: this.opts.cover
     });
+
+    this.scrollWith.style.height = `${this.opts.sequenceSpeed}px`;
+    
     
     this.init();
   }
@@ -405,7 +410,7 @@ const myImageSequence0 = new ScrollSequence({
     scrollWith: '.my-scroll-container0',
     images: myImageSequenceImages0,
     imagesRoot: 'https://lennardkiessling.com/assets/sequence1/',
-    priorityFrames: [1, 20, 40, 60, 99],
+    sequenceSpeed: 2300,
     cover: true,
     starts: 'in',
     ends: 'in'
@@ -416,7 +421,7 @@ const myImageSequence1 = new ScrollSequence({
   scrollWith: '.my-scroll-container1',
   images: myImageSequenceImages1,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence2/',
-  priorityFrames: [1, 20, 40, 60, 99],
+  sequenceSpeed: 2300,
   cover: true,
   starts: 'in',
   ends: 'in'
@@ -427,7 +432,7 @@ const myImageSequence2 = new ScrollSequence({
   scrollWith: '.my-scroll-container2',
   images: myImageSequenceImages2,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence3/',
-  priorityFrames: [1, 20, 40, 60, 99],
+  sequenceSpeed: 2300,
   cover: true,
   starts: 'in',
   ends: 'in'
@@ -438,7 +443,7 @@ const myImageSequence3 = new ScrollSequence({
   scrollWith: '.my-scroll-container3',
   images: myImageSequenceImages3,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence4/',
-  priorityFrames: [1, 20, 40, 60, 99],
+  sequenceSpeed: 2300,
   cover: true,
   starts: 'in',
   ends: 'in'
