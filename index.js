@@ -26,8 +26,7 @@ function initilizeVariables() {
 
 function stopAvatar(){
     let scrolled = window.scrollY || document.documentElement.scrollTop;
-    console.log(scrolled < stopPosition)
-    if (startPosition < scrolled && scrolled < stopPosition) {
+    if (startPosition - 19 < scrolled && scrolled < stopPosition) {
         let scrolledMinus = scrolled - startPosition;
         elementToScroll.style.transform = 'translateY(' + scrolledMinus + 'px)';
     }
@@ -410,7 +409,7 @@ const myImageSequence0 = new ScrollSequence({
     scrollWith: '.my-scroll-container0',
     images: myImageSequenceImages0,
     imagesRoot: 'https://lennardkiessling.com/assets/sequence1/',
-    sequenceSpeed: 5000,
+    sequenceSpeed: 3000,
     cover: true,
     starts: 'in',
     ends: 'in'
@@ -421,7 +420,7 @@ const myImageSequence1 = new ScrollSequence({
   scrollWith: '.my-scroll-container1',
   images: myImageSequenceImages1,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence2/',
-  sequenceSpeed: 5000,
+  sequenceSpeed: 3000,
   cover: true,
   starts: 'in',
   ends: 'in'
@@ -432,7 +431,7 @@ const myImageSequence2 = new ScrollSequence({
   scrollWith: '.my-scroll-container2',
   images: myImageSequenceImages2,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence3/',
-  sequenceSpeed: 5000,
+  sequenceSpeed: 3000,
   cover: true,
   starts: 'in',
   ends: 'in'
@@ -443,7 +442,7 @@ const myImageSequence3 = new ScrollSequence({
   scrollWith: '.my-scroll-container3',
   images: myImageSequenceImages3,
   imagesRoot: 'https://lennardkiessling.com/assets/sequence4/',
-  sequenceSpeed: 5000,
+  sequenceSpeed: 3000,
   cover: true,
   starts: 'in',
   ends: 'in'
