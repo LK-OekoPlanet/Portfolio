@@ -62,7 +62,7 @@ const myImageSequenceImages2 = [];
 const myImageSequenceImages3 = [];
 
 for (let i = 1; i <= 100; i++) {
-  myImageSequenceImages0.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
+  myImageSequenceImages0.push(`frame_${`000${i}`.slice(-3)}.jpg`);
 }
 for (let i = 1; i <= 100; i++) {
   myImageSequenceImages1.push(`ezgif-frame-${`00${i}`.slice(-3)}.jpg`);
