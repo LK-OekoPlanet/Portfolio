@@ -18,7 +18,7 @@ jobs:
         with:
           username: ${{ secrets.ftp_username }}
           server: ${{ secrets.ftp_server }}
+          ssh_private_key: ${{ secrets.ssh_private_key }}
           port: ${{ secrets.ftp_port }}
-          remote_path: '/Portfolio'
+          remote_path: '/var/www/html/lennardkiessling.com'
           sftp_only: true
-          password: ${{ secrets.ftp_password }}
