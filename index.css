@@ -129,10 +129,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--backgroundcolor2);
 }
 
-.part-0 h1, .part-0 h2, .part-0 h3, .part-0 h4, .part-0 h5, .part-0 h6, .part-0 p{
-    color: lightgreen;
-}
-
 a {
     color: var(--linkcolor);
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -202,8 +198,8 @@ main {
 }
 
 .parallaxIntroduction {
-    background-image: url("assets/introductionPicture1.webp");
-    min-height: 85vh;
+    background-image: url("assets/introbild0.webp");
+    min-height: 100vh;
     text-align: center;
     background-position: center;
   }
@@ -213,17 +209,13 @@ main {
 }
 
 .textParallaxIntroduction h2 {
-    background-color: black;
-    border-radius: 15px;
-    padding: 0 20px;
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .textParallaxIntroduction p {
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: black;
     border-radius: 15px;
     padding: 0 20px;
     margin-top: 2%;
