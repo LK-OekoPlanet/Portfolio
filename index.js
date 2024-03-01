@@ -408,14 +408,15 @@ const myImageSequence0 = new ScrollSequence({
     container: '.my-image-sequence-container0', 
     scrollWith: '.my-scroll-container0',
     images: myImageSequenceImages0,
-    imagesRoot: 'https://lennardkiessling.com/assets/sequence1/',
+    imagesRoot: 'https://lennardkiessling.com/assets/sequence0/',
     sequenceSpeed: 3000,
     cover: true,
     starts: 'in',
     ends: 'in'
   });
 
-const myImageSequence1 = new ScrollSequence({
+/*
+  const myImageSequence1 = new ScrollSequence({
   container: '.my-image-sequence-container1', 
   scrollWith: '.my-scroll-container1',
   images: myImageSequenceImages1,
@@ -447,7 +448,7 @@ const myImageSequence3 = new ScrollSequence({
   starts: 'in',
   ends: 'in'
 });
-
+*/
 
 
 // END SCROLL_SEQUENCE CODE
