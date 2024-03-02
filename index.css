@@ -481,6 +481,12 @@ align-self: flex-end;
     color: black;
 }
 
+.filled {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .filled:nth-of-type(1) {
     background-image: url(assets/horizontal-pic1.jpg);
 }
