@@ -100,41 +100,66 @@
         <div class="part-2" id="2">
             <h1>Part.2</h1>
             <div class="left-side">
-            <div>
-                <h2>
-                    About me.Person
-                </h2>
+                <div>
+                    <h2>
+                        About me.Person
+                    </h2>
+                </div>
+                <div class="side-by-side">
+                    <div class="box-details private">
+                        <p>Travel</p>
+                        <p>Adventures</p>
+                        <p>Cultures</p>
+                    </div>
+                    <div class="box-video">
+                        <video autoplay loop muted>
+                            <source src="assets/videos/beach vid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="side-by-side">
+                    <div class="box-video">
+                        <video autoplay loop muted>
+                            <source src="assets/videos/beach2 vid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="box-details private">
+                        <p>Asia ✔</p>
+                        <p>America ✔</p>
+                        <p>Europe ✔</p>
+                    </div>
+                </div>
             </div>
-            <div class="side-by-side">
-                <div class="box-details private">
-                    <p>Travel</p>
-                    <p>Adventures</p>
-                    <p>Cultures</p>
+        </div>
+        <div class="part-3" id="3">
+            <!-- GSAP HORIZONTAL SCROLL -->
+            <div class="horizontal-container">
+                <div class="horizontal-wrapper">
+                <div class="horizontal-scroller">
+                    <div class="row">
+                        <div class="item filled"><p></p></div>
+                        <div class="item filled"><p></p></div>
+                        <div class="item filled"><p></p></div>
+                        <div class="item filled"><p></p></div>
+                        <div class="item filled"><p></p></div>
+                    </div>
                 </div>
-                <div class="box-video">
-                    <video autoplay loop muted>
-                        <source src="assets/videos/beach vid.mp4" type="video/mp4">
-                    </video>
                 </div>
-            </div>
-            <div class="side-by-side">
-                <div class="box-video">
-                    <video autoplay loop muted>
-                        <source src="assets/videos/beach2 vid.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="box-details private">
-                    <p>Asia ✔</p>
-                    <p>America ✔</p>
-                    <p>Europe ✔</p>
-                </div>
-            </div>
             </div>
         </div>
     </main>
     <footer>
+        <div>
+            <a class="github-button" href="https://github.com/LennardKiessling/Portfolio">Github of this Website</a>
+            <h1>Created By</h1>
+            <h2>Lennard Kießling</h2>
+            <a href="https://lennardkiessling.de">Contact Me</a>
+        </div>
     </footer>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
     <script src="index.js"></script>
 </body>
 

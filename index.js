@@ -460,3 +460,28 @@ ScrollOut({
     visibleY: true
   }
 });
+
+
+// GSAP HORIZONTAL SCROLL
+
+gsap.registerPlugin(ScrollTrigger);
+
+window.addEventListener("load", function() {
+  let container = document.querySelector(".horizontal-scroller");
+  let containerWidth = container.scrollWidth - document.documentElement.clientWidth;
+
+
+  gsap.to(container, {
+    x: () => -containerWidth,
+    scrollTrigger: {
+      markers: false,
+      trigger: '.horizontal-wrapper',
+      start: 'top top',
+      scrub: 0.5,
+      pin: '.horizontal-container',
+      end: () => "+=" + containerWidth,
+      invalidateOnRefresh: true,
+      
+  }
+  })
+});

@@ -34,6 +34,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: var(--backgroundcolor1);
+    overflow-x: hidden;
 }
 
 .introImage {
@@ -117,7 +118,7 @@ h1 {
 }
 
 h2, h3 {
-    font-size: clamp(1rem,5vw,3.5rem);
+    font-size: clamp(1rem,3vw,3.5rem);
     text-align: center;
 }
 
@@ -185,7 +186,7 @@ a.logo img {
 
 /* Main Content */
 main {
-    margin: 60px 0 1000px 0;
+    margin: 60px 0 0 0;
     background-color: var(--backgroundcolor);
 }
 
@@ -381,4 +382,75 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+
+/* GSAP HORIZONTAL SCROLL */
+
+.horizontal-scroller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100vh;
+}
+  
+.horizontal-wrapper {
+width: 100%;
+height: 100vh;
+}
+
+.horizontal-container {
+width: 100%;
+height: 100vh;
+margin-top: 2em;
+}
+
+.row {
+display: flex;
+justify-content: flex-start;
+gap: 5px;
+}
+
+.item {
+padding: 5vw;
+border: 5px solid white;
+border-radius: 5vw;
+box-sizing: border-box;
+font-size: 2vw;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+height: 80vh;
+color: white;
+font-weight: normal;
+width: 30vw;
+}
+
+.item > p {
+margin: 0;
+}
+
+.item-link {
+border-bottom: 1px solid black;
+align-self: flex-end;
+}
+
+.filled:nth-of-type(1) {
+    background-image: url();
+}
+.filled:nth-of-type(2) {
+    background-image: url();
+}
+.filled:nth-of-type(3) {
+    background-image: url();
+}
+.filled:nth-of-type(4) {
+    background-image: url();
+}
+.filled:nth-of-type(5) {
+    background-image: url();
 }
