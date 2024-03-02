@@ -252,17 +252,6 @@ main {
     background-color: var(--backgroundcolor2);
 }
 
-/* For later - idea
-@media only screen and (min-width: 1300px) {
-    .part-3 {
-        overflow-y: scroll;
-    }
-    footer {
-        display: none;
-    }
-}
-*/
-
 /* Two sides in part-1 */
 .left-side {
     width: 65%;
