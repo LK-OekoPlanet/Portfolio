@@ -15,7 +15,7 @@
     --backgroundcolor2:#fafafa;
     --headercolor: #07102D;
     --alertcolor: #ff4500;
-    --footercolor: #333;
+    --footercolor: #856541;
 }
 
 * {
@@ -194,7 +194,7 @@ main {
     position: relative;
 }
 @media only screen and (min-width:1200px) {
-    .parallaxIntroduction {
+    .parallax {
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -202,23 +202,39 @@ main {
     }
 }
 
-.parallaxIntroduction {
-    background-image: url("assets/introbild0.webp");
+.parallax {
     min-height: 100vh;
     text-align: center;
     background-position: center;
-  }
+}
 
-.textParallaxIntroduction {
+.parallax.Introduction {
+    background-image: url("assets/introbild0.webp");
+}
+
+.parallax.Outro {
+    background-image: url("assets/outro0.webp");
+}
+
+.parallax.Outro h2, .parallax.Outro p, .parallax.Outro a {
+    color: white;
+}
+
+.parallax.Outro a {
+    padding: 20px;
+    font-size: large;
+}
+
+.textParallax {
     display: inline-block;
 }
 
-.textParallaxIntroduction h2 {
+.textParallax h2 {
     margin-top: 30%;
     font-size: clamp(2rem, 5vw, 5rem);
 }
 
-.textParallaxIntroduction p {
+.textParallax p {
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 15px;
