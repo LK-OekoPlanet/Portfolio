@@ -61,7 +61,7 @@ const myImageSequenceImages1 = [];
 const myImageSequenceImages2 = [];
 const myImageSequenceImages3 = [];
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 65; i++) {
   myImageSequenceImages0.push(`frame_${`000${i}`.slice(-4)}.jpg`);
 }
 for (let i = 1; i <= 100; i++) {
@@ -409,7 +409,7 @@ const myImageSequence0 = new ScrollSequence({
     scrollWith: '.my-scroll-container0',
     images: myImageSequenceImages0,
     imagesRoot: 'https://lennardkiessling.com/assets/sequence0/',
-    sequenceSpeed: 5000,
+    sequenceSpeed: 3850,
     cover: true,
     starts: 'in',
     ends: 'in'
