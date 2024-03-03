@@ -61,7 +61,7 @@ const myImageSequenceImages1 = [];
 const myImageSequenceImages2 = [];
 const myImageSequenceImages3 = [];
 
-for (let i = 1; i <= 65; i++) {
+for (let i = 1; i <= 80; i++) {
   myImageSequenceImages0.push(`frame_${`000${i}`.slice(-4)}.jpg`);
 }
 for (let i = 1; i <= 100; i++) {
